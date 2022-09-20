@@ -1,0 +1,82 @@
+.fl {
+    float: left;
+}
+
+
+.menu li {
+position: relative;
+}
+.submenu {
+    display: none;
+    position: absolute;
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu-2 {
+    display: none;
+    position: absolute;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: lightgray;
+    background-color: black;
+    padding: 30px;
+    white-space: nowrap;
+}
+
+a:hover {
+  background-color: darkblue;
+  color: #fff;
+}
+
+a:focus {
+    background-color: darkblue;
+    color: #fff;
+}
+
+.menu li:hover .submenu{
+    display: block;
+}
+
+.menu li:hover a {
+    background-color: darkblue;
+    color: #fff;
+}
+
+.submenu li:hover .submenu-2 {
+    display: block;
+    top: 0;
+    left: 100%;
+}
+
+.menu li:nth-child(2) a::after {
+    margin-left: 10px;
+    content: "+";
+   color: lightgrey;
+}
+
+.submenu li:nth-child(2) a::after {
+    margin-left: 60px;
+    content: "+";
+   color: lightgrey;
+}
+
+.submenu li:first-child a::after {
+    margin-left: 60px;
+    content: "+";
+   color: lightgrey;
+}
+
+
+.submenu-2 li:nth-child(2) a::after {
+    content: "";
+}
+
+.submenu-2 li:first-child a::after {
+    content: "";
+}
